@@ -9,13 +9,11 @@
 
 ---
 
-## 📱 App UI Mockups & Screen Showcase
+## 🏖️ Destinasi Unggulan Jawa Timur
 
-Aplikasi dirancang dengan standar desain editorial minimalis, ramah seluler, dan responsif.
-
-| 🏠 Beranda (Screen S-01) | 🏔️ Detail Destinasi (Screen S-02) | 🗺️ Itinerary & Tur (Screen S-03) |
+| Tanjung Papuma (Jember) | Bromo Sunrise (Probolinggo/Pasuruan) | Kawah Ijen & Blue Fire (Banyuwangi) |
 | :---: | :---: | :---: |
-| <pre>┌───────────────────────────┐<br>│ 👤 Halo, Vanessa          │<br>│ 🔍 Cari destinasi...      │<br>│ 🏷️ [Semua] [Jember] [Bromo]│<br>│ 📸 <b>Tanjung Papuma</b>       │<br>│    🟢 Kondisi Jalur Aman  │<br>│    ⭐ 5.0 (184 ulasan)    │<br>│    [Lihat detail  ➔]      │<br>└───────────────────────────┘</pre> | <pre>┌───────────────────────────┐<br>│ 🌊 <b>Tanjung Papuma</b>        │<br>│ 📍 Jember, Jawa Timur     │<br>│ 📄 Deskripsi & Galeri     │<br>│ 🌊 <i>Status Kondisi Alam</i>   │<br>│    • Gelombang 0.8-1.2m   │<br>│    • Simulasi Pasang      │<br>│ 📦 <b>Paket Tur Populer</b>    │<br>└───────────────────────────┘</pre> | <pre>┌───────────────────────────┐<br>│ 🚗 <b>Eksplor Jember</b>         │<br>│ 📅 3-Hari Tur Eksotis     │<br>│ ─────────────             │<br>│ 🔽 <b>Hari 1</b>: Kedatangan    │<br>│ 🔽 <b>Hari 2</b>: Sunrise Papuma│<br>│ 🔽 <b>Hari 3</b>: Agrowisata    │<br>│ 🔘 Add-on Jeep 4WD (+350k)│<br>│ [Pesan tur ini]           │<br>└───────────────────────────┘</pre> |
+| <img src="art/papuma.jpg" width="300" alt="Tanjung Papuma" /> | <img src="art/bromo.jpg" width="300" alt="Bromo Sunrise" /> | <img src="art/ijen.jpg" width="300" alt="Kawah Ijen" /> |
 
 ---
 
