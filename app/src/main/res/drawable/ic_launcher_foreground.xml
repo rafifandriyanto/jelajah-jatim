@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="22"
+        android:translateY="22">
+        <!-- Bold Papuma sea stack & mountain peak silhouette -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M32,8 L52,44 L12,44 Z" />
+        <path
+            android:fillColor="#EBF5EF"
+            android:pathData="M44,18 L60,44 L28,44 Z" />
+        <!-- Ocean wave bars -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M10,49 C22,49 26,46 32,46 C38,46 42,49 54,49 L54,54 L10,54 Z" />
+    </group>
+</vector>

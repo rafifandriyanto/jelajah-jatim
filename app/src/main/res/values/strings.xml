@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Jelajah Jatim</string>
+    <string name="greeting_user">Halo, Vanessa</string>
+    <string name="home_subtitle">Jelajahi keindahan Jawa Timur</string>
+    <string name="search_placeholder">Cari destinasi atau paket tur...</string>
+    <string name="cta_view_detail">Lihat detail</string>
+    <string name="cta_book_now">Pesan sekarang</string>
+    <string name="cta_read_more">Baca selengkapnya</string>
+    <string name="cta_hide">Sembunyikan</string>
+    <string name="cta_save_offline">Simpan jadwal offline</string>
+    <string name="cta_open_offline">Buka jadwal offline</string>
+    <string name="cta_explore_jember">Lihat wisata Jember</string>
+    <string name="nav_home">Beranda</string>
+    <string name="nav_saved">Tersimpan</string>
+    <string name="nav_trips">Perjalanan</string>
+    <string name="nav_menu">Menu</string>
+    <string name="badge_safe_route">Kondisi Jalur Aman</string>
+    <string name="badge_high_tide">Pasang Air Laut Tinggi</string>
+    <string name="badge_4wd_required">Wajib Kendaraan 4WD / Off-Road</string>
+    <string name="badge_standard_access">Akses Standar Roda 4 &amp; Bus Pariwisata</string>
+    <string name="badge_route_closed">Jalur Ditutup Sementara</string>
+</resources>
