@@ -1,6 +1,8 @@
 package com.example.ui.screens
 
 import androidx.activity.compose.BackHandler
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.ui.theme.JelajahJatimTheme
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
@@ -942,3 +944,22 @@ private fun TourHorizontalMiniCard(
         }
     }
 }
+
+@Preview(showBackground = true, widthDp = 360, heightDp = 800)
+@Composable
+fun DestinationDetailPreview() {
+    JelajahJatimTheme {
+        val dest = com.example.data.ContentSeedData.DESTINATIONS.first()
+        val tours = com.example.data.ContentSeedData.getToursForDestination(dest.id)
+        DestinationDetailScreenS02(
+            destination = dest,
+            relatedTours = tours,
+            isSaved = true,
+            onToggleSave = {},
+            onBackClick = {},
+            onSelectTourPackage = {},
+            onSwitchToAlternateDestination = {}
+        )
+    }
+}
+

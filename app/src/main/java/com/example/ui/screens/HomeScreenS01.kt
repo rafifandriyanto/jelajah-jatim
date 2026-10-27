@@ -1,6 +1,8 @@
 package com.example.ui.screens
 
 import android.view.HapticFeedbackConstants
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.ui.theme.JelajahJatimTheme
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
@@ -1316,3 +1318,29 @@ private fun FeaturedDestinationHeroCard(
         }
     }
 }
+
+@Preview(showBackground = true, widthDp = 360, heightDp = 800)
+@Composable
+fun HomeScreenPreview() {
+    JelajahJatimTheme {
+        HomeScreenS01(
+            selectedCategory = "Semua",
+            onSelectCategory = {},
+            searchQuery = "",
+            onSearchQueryChange = {},
+            selectedAccessFilter = null,
+            onSelectAccessFilter = {},
+            savedDestinationIds = emptySet(),
+            onToggleSaveDestination = {},
+            isOfflineMode = false,
+            onToggleOfflineMode = {},
+            isSimulatingSkeleton = false,
+            savedOfflineTourCount = 2,
+            lastSyncedTimestamp = "10 Min lalu",
+            onOpenOfflineVault = {},
+            onNavigateToDestinationDetail = {},
+            onNavigateToTourItinerary = {}
+        )
+    }
+}
+

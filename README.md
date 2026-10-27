@@ -1,22 +1,89 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🏝️ Jelajah Jatim — Mobile App Eksplorasi Wisata Jawa Timur
 
-# Run and deploy your AI Studio app
+[![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
+[![Kotlin](https://img.shields.io/badge/Language-Kotlin-purple.svg)](https://kotlinlang.org)
+[![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose-blue.svg)](https://developer.android.com/jetpack/compose)
+[![Gemini AI](https://img.shields.io/badge/AI-Google%20Gemini-orange.svg)](https://ai.google.dev/)
 
-This contains everything you need to run your app locally.
+**Jelajah Jatim** adalah aplikasi Android modern berbasis Jetpack Compose untuk mengeksplorasi destinasi wisata, paket tur terkurasi, serta informasi kondisi alam terkini di wilayah Jawa Timur (Jember, Banyuwangi, Bromo, Malang, dan sekitarnya).
 
-View your app in AI Studio: https://ai.studio/apps/503e655f-9da8-42a0-8901-b9ab41791c77
+---
 
-## Run Locally
+## 📱 App UI Mockups & Screen Showcase
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+Aplikasi dirancang dengan standar desain editorial minimalis, ramah seluler, dan responsif.
 
+| 🏠 Beranda (Screen S-01) | 🏔️ Detail Destinasi (Screen S-02) | 🗺️ Itinerary & Tur (Screen S-03) |
+| :---: | :---: | :---: |
+| <pre>┌───────────────────────────┐<br>│ 👤 Halo, Vanessa          │<br>│ 🔍 Cari destinasi...      │<br>│ 🏷️ [Semua] [Jember] [Bromo]│<br>│ 📸 <b>Tanjung Papuma</b>       │<br>│    🟢 Kondisi Jalur Aman  │<br>│    ⭐ 5.0 (184 ulasan)    │<br>│    [Lihat detail  ➔]      │<br>└───────────────────────────┘</pre> | <pre>┌───────────────────────────┐<br>│ 🌊 <b>Tanjung Papuma</b>        │<br>│ 📍 Jember, Jawa Timur     │<br>│ 📄 Deskripsi & Galeri     │<br>│ 🌊 <i>Status Kondisi Alam</i>   │<br>│    • Gelombang 0.8-1.2m   │<br>│    • Simulasi Pasang      │<br>│ 📦 <b>Paket Tur Populer</b>    │<br>└───────────────────────────┘</pre> | <pre>┌───────────────────────────┐<br>│ 🚗 <b>Eksplor Jember</b>         │<br>│ 📅 3-Hari Tur Eksotis     │<br>│ ─────────────             │<br>│ 🔽 <b>Hari 1</b>: Kedatangan    │<br>│ 🔽 <b>Hari 2</b>: Sunrise Papuma│<br>│ 🔽 <b>Hari 3</b>: Agrowisata    │<br>│ 🔘 Add-on Jeep 4WD (+350k)│<br>│ [Pesan tur ini]           │<br>└───────────────────────────┘</pre> |
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
-7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
+---
+
+## ✨ Fitur Unggulan
+
+- **🔍 Eksplorasi Destinasi & Tur**:
+  - Filter interaktif berdasarkan wilayah (*Jember, Banyuwangi, Bromo, Malang*).
+  - *Stacked Peeking Hero Carousel* dengan dukungan pencarian terpadu.
+
+- **🌊 Informasi & Monitoring Kondisi Alam Real-time**:
+  - Peringatan pasang laut & keamanan jalur trekking.
+  - Rekomendasi aksesibilitas kendaraan (misal: *Akses Roda 4 Standar vs 4WD Off-road*).
+
+- **📴 Mode Luring (Offline Vault)**:
+  - Kemampuan menyimpan rincian tur dan destinasi untuk diakses tanpa koneksi internet saat berada di lokasi terpencil.
+
+- **🤖 Google Gemini AI Integration**:
+  - Rekomendasi perjalanan cerdas dan rekomendasi tur kustom berbasis AI Studio Gemini API.
+
+- **🎨 Standar Desain Ergonomis**:
+  - Dibangun sesuai token semantik tanpa warna liar.
+  - Format angka & mata uang rapi dengan `tabular-nums` (`Rp 1.450.000`).
+  - *Touch target* minimal 44x44 pt (`>= 48.dp`).
+
+---
+
+## 🚀 Cara Menjalankan Project
+
+### Prerequisites
+- [Android Studio Ladybug (atau versi lebih baru)](https://developer.android.com/studio)
+- JDK 11 atau lebih baru
+- Android SDK 36
+
+### Langkah Setup & Run Local
+
+1. **Clone Repository**:
+   ```bash
+   git clone https://github.com/rafifandriyanto/jelajah-jatim.git
+   cd jelajah-jatim
+   ```
+
+2. **Konfigurasi Gemini API Key**:
+   Buka file `.env` di folder utama project dan masukkan API Key Gemini Anda:
+   ```env
+   GEMINI_API_KEY=API_KEY_GEMINI_ANDA
+   ```
+
+3. **Buka Project di Android Studio**:
+   - Buka Android Studio -> **Open** -> Pilih direktori project `jelajah-jatim`.
+   - Lakukan **Gradle Sync** (`File` -> `Sync Project with Gradle Files`).
+
+4. **Jalankan Aplikasi**:
+   - Pilih emulator Android atau hubungkan perangkat fisik via USB Debugging.
+   - Tekan tombol **Run** (Play Hijau) atau gunakan shortcut `Shift + F10`.
+
+---
+
+## 🛠️ Arsitektur & Teknologi
+
+- **UI Framework**: [Jetpack Compose](https://developer.android.com/jetpack/compose) (Material 3)
+- **Programming Language**: [Kotlin](https://kotlinlang.org/)
+- **Local Storage / Offline Vault**: [Room Database](https://developer.android.com/training/data-storage/room) & Coroutines Flow
+- **Image Loading**: [Coil](https://coil-kt.github.io/coil/)
+- **Configuration & Secrets**: Secrets Gradle Plugin (Membaca `.env`)
+- **AI Engine**: Google Gemini API via `BuildConfig.GEMINI_API_KEY`
+
+---
+
+## 📄 Lisensi
+
+Project ini dikembangkan untuk eksplorasi pariwisata Jawa Timur. All rights reserved.

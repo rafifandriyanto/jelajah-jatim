@@ -1,6 +1,8 @@
 package com.example.ui.screens
 
 import android.view.HapticFeedbackConstants
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.ui.theme.JelajahJatimTheme
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
@@ -2078,3 +2080,26 @@ private fun QrisMatrixCanvas(modifier: Modifier = Modifier) {
         }
     }
 }
+
+@Preview(showBackground = true, widthDp = 360, heightDp = 800)
+@Composable
+fun TourItineraryPreview() {
+    JelajahJatimTheme {
+        val dest = com.example.data.ContentSeedData.DESTINATIONS.first()
+        val tour = com.example.data.ContentSeedData.getToursForDestination(dest.id).first()
+        TourItineraryScreenS03(
+            tour = tour,
+            isTourSaved = false,
+            onToggleSaveTour = {},
+            isOfflineVaultSaved = false,
+            onSaveToOfflineVault = {},
+            isOfflineMode = false,
+            savedOfflineCount = 2,
+            lastSyncedTimestamp = "10 Min lalu",
+            onOpenOfflineVault = {},
+            onBackClick = {},
+            onConfirmBooking = {}
+        )
+    }
+}
+
